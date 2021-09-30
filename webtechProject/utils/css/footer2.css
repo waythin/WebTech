@@ -1,0 +1,93 @@
+footer {
+    display: flex;
+    width: 100%;
+    background-color: var(--footer);
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+footer .footer-left-section {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 50px;
+}
+footer .footer-right-section {
+    box-sizing: border-box;
+    margin: 50px;
+    flex: 1;
+}
+.footer-left-section .info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid white;
+}
+.footer-left-section .info h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+.footer-left-section .info h2 span {
+    background-color: white;
+    padding: 10px;
+    color: var(--footer);
+}
+.footer-left-section .info .social {
+    font-size: 2rem;
+}
+.footer-left-section .info .social a {
+    text-decoration: none;
+    color: white;
+}
+.footer-left-section .footer-navigation ul {
+    list-style: none;
+}
+.footer-left-section .footer-navigation ul a {
+    text-decoration: none;
+    color: white;
+}
+.footer-left-section .footer-navigation{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;
+    border-bottom: 3px solid white;
+}
+.footer-left-section .footer-navigation ul a:hover {
+    border-bottom: 1px solid white;
+}
+.footer-right-section {
+    border: 3px solid white;
+    padding: 30px;
+}
+.footer-right-section .formcell {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.footer-right-section .col2 {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right-section form input {
+    padding: 5px;
+}
+.footer-right-section form textarea {
+    height: 80px;
+    resize: none;
+}
+.footer-right-section form button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    height: 50px;
+    margin-top: 20px;
+    transition: all .2s ease-out;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer-right-section form button:hover {
+    background-color: white;
+    color: var(--footer);
+}

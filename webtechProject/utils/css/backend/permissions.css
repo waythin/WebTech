@@ -1,0 +1,49 @@
+.user-roles {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+.user-roles h2 {
+    padding-bottom: 10px;
+}
+.user-roles ul {
+    list-style: none;
+}
+.user-roles ul li {
+    font-weight: lighter;
+}
+.search-user{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.search-user .search-form  {    
+    width: 90%;
+}
+.search-user .search-form form {
+    width: 80%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.search-user .search-form input[type=text] {
+    flex: 1;
+    padding: 5px;
+}
+.search-user .search-form input[type=submit] {
+    padding: 5px;
+}
+.search-result {
+    font-weight: lighter;
+} 
+.search-result .user {
+    cursor: pointer;
+}
+.search-result .user:hover {
+    color: white;
+    background-color: var(--secondary-gray);
+}
+.search-result .user .details {
+    display: none;
+    color: var(--secondary-gray);
+    padding: 5px;
+    background-color: var(--primary-gray);
+}

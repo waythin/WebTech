@@ -1,0 +1,279 @@
+.home-section1 {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-template-rows: 425px 186px;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "cover contact"
+        "order contact";
+}
+.home-section1 > div {
+    box-shadow: 22px 11px 17px -16px var(--primary-gray), -15px 17px 17px -16px var(--primary-gray) !important;
+    animation: slidein .5s ease-out;
+}
+.cover-menu {
+    grid-area: cover;    
+    background-image: url(../../image/ui/burger.png);
+    background-size: cover;
+    position: relative;    
+}
+
+.cover-menu .content {
+    width: 100%;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.66);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    transition: all .5s ease-out;
+
+}
+.cover-menu .content:hover {
+    height: 300px;
+}
+.cover-menu .content .title {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.cover-menu .content .title::after {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 2px;
+    height: 80%;
+}
+.cover-menu .content .title h2 {
+    margin-left: 15px;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2.5rem;
+}
+.cover-menu .content .desc {    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+.cover-menu .content .desc .location {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.cover-menu .content .desc .location i {
+    color: var(--secondary-color);
+}
+.contact-form {
+    grid-area: contact;
+}
+.contact-form .title {
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: none !important;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.contact-form form label {
+    font-weight: bold;
+}
+.contact-form form input {
+    background-color: var(--primary-gray);
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.contact-form form input:focus {
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+}
+.contact-form form textarea:focus {
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+}
+.contact-form form textarea {
+    background-color: var(--primary-gray);
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    height: 200px;
+    box-sizing: border-box;
+    resize: none;
+}
+.contact-form form .submit-area {
+    box-shadow: none !important;
+    display: flex;
+}
+.contact-form form .submit-area input {
+    flex: 1;
+    cursor: pointer;
+}
+.contact-form form .submit-area input[type=submit] {
+    color: white;
+}
+.contact-form form .submit-area input:nth-child(2) {
+    background-color: var(--secondary-color);
+}
+.order-cover-menu {
+    grid-area: order;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.order-cover-menu .menu-name {
+    display: flex;
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+.order-cover-menu .menu-name .menu-picture {
+    background-image: url(../../image/ui/pizza.png);
+    height: 92px;
+    width: 92px;
+    border: 2px solid black;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 0px 5px white; 
+    box-shadow: inset 0px 0px 0px 5px white;
+    background-size: cover;
+}
+.order-cover-menu .menu-name .menu-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.order-cover-menu .order-amount {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.order-cover-menu .order-amount span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.order-cover-menu .amount-control-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-cover-menu .amount-control-button button 
+{
+    height: 80px;
+    width: 80px;
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.order-cover-menu .amount-control-button button:nth-child(1) {
+    background-image: url(../../image/ui/plus.png);    
+}
+.order-cover-menu .amount-control-button button:nth-child(2) {
+    background-image: url(../../image/ui/minus.png);    
+}
+
+.order-cover-menu .addtocart-button-container button {
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url(../../image/ui/addtocart.png), transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.featured-menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 300px 300px;
+    grid-template-rows: 300px 300px;
+    margin-top: 50px;
+    grid-gap: 20px;
+}
+.featured-menu > div {
+    box-shadow: 22px 11px 17px -16px var(--primary-gray), -15px 17px 17px -16px var(--primary-gray) !important;
+    animation: slidein .5s ease-out;
+}
+.featured-menu .preview {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: var(--secondary-gray);
+    position: relative;
+}
+.featured-menu .preview button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 80px;
+    width: 80px;
+    background: url(../../image/ui/addtocart.png), transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.featured-menu .preview h2 {
+    font-size: 2.3rem;
+}
+.featured-menu .preview h2{
+    margin-left: 50px;
+    padding-right: 30px;
+}
+.featured-menu .preview h3{
+    margin-left: 50px;
+    padding-right: 30px;
+}
+.featured-menu .preview p {
+    margin-left: 50px;
+    padding-right: 30px;
+}
+.featured-menu .menu-items img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+#selected-menu-item {
+    border: 4px solid black !important;
+}
+.featured-menu .menu-items {
+    border: 4px solid white;
+}
+.featured-menu .menu-items:hover {
+    border: 4px solid black;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

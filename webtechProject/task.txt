@@ -1,0 +1,6 @@
+-> Form validation
+-> creating views
+-> database query
+-> pull data from json
+-> create/update classes
+-> create/update models

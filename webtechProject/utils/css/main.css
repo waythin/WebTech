@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #8C8892;
+  --secondary-color: #291528;
+  --primary-gray: #dddddd;
+  --secondary-gray: #6F6F6F;
+  --footer: #39363F;
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}

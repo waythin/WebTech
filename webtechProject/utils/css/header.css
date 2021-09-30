@@ -1,0 +1,182 @@
+/* Old CSS */
+:root {
+    --primary-gray: #E9E9E9;
+    --secondary-gray: #5E5E5E;
+    --dark-gray: #707070;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -60px;
+  } */
+  
+  header .dashboard-button-container {
+    height: 60px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: var(--primary-gray);
+  }
+  
+  header .dashboard-button-container a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-gray);
+    padding: 0.5em 4em 0.5em 4em;
+  }
+  
+  header .topnav {
+    width: 100vw;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    background-color: white;
+    -webkit-transition: all .7s ease-out;
+    transition: all .7s ease-out;
+    -webkit-box-shadow: 22px 11px 17px -16px var(--primary-gray), -15px 17px 17px -16px var(--primary-gray);
+            box-shadow: 22px 11px 17px -16px var(--primary-gray), -15px 17px 17px -16px var(--primary-gray);
+  }
+  
+  header .topnav .main-logo h1 {
+    font-family: 'Parisienne', cursive;
+    margin-left: 30px;
+  }
+  
+  header .topnav .hamburger {
+    height: 16px;
+    width: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  
+  header .topnav .hamburger div {
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--secondary-gray);
+  }
+  
+  header .topnav .hamburger div:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+  header .topnav .hamburger div:nth-child(3) {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  header .topnav nav {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    width: 100vw;
+    background-color: white;
+    -webkit-transition: .2s ease-out all;
+    transition: .2s ease-out all;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    z-index: 2;
+  }
+  
+  header .topnav nav ul {
+    list-style: none;
+  }
+  
+  header .topnav nav ul li {
+    padding: 1em;
+    padding-left: 5rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  header .topnav nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-gray);
+  }
+  
+  header .topnav nav ul li a:hover {
+    border-bottom: 1px solid var(--secondary-gray);
+  }
+
+
+
+  @media only screen and (min-width: 1000px) {
+    header .dashboard-button-container {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+    }
+    header .dashboard-button-container a {
+      margin-right: 100px;
+    }
+    header .topnav {
+      background-color: rgba(255, 255, 255, 0.68);
+    }
+    header .topnav .hamburger {
+      display: none;
+    }
+    header .topnav nav {
+      position: initial;
+      -webkit-transform: unset;
+              transform: unset;
+      height: 100%;
+      width: 50%;
+      background-color: unset;
+      -webkit-box-shadow: unset;
+              box-shadow: unset;
+    }
+    header .topnav nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin: 0px 50px 0px 50px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%;
+    }
+}

@@ -1,0 +1,117 @@
+.menu-container {
+    width: 100%;
+    margin-top: 50px;
+}
+.menu-container .menu-type {
+    width: 100%;
+    height: 80px;
+}
+.menu-container .menu-type ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.menu-container .menu-type ul li {
+    padding: 10px 40px 10px 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all .2s ease-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 4px solid white;
+}
+.menu-container .menu-type ul li:hover {
+    border-bottom: 4px solid black;
+}
+.selected-menu {
+    border-bottom: 4px solid black !important
+}
+
+.menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 20px;
+}
+.menu > div{
+    box-shadow: 22px 11px 17px -16px var(--primary-gray), -15px 17px 17px -16px var(--primary-gray) !important;
+}
+.menu > div:not(.preview) {
+    animation: slidein .5s ease-out;
+}
+.menu .preview {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: var(--secondary-gray);
+    position: relative;
+}
+.menu .preview img {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.menu .preview button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 80px;
+    width: 80px;
+    background: url(../../image/ui/addtocart.png), transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.menu .preview h2 {
+    font-size: 2.3rem;
+}
+.menu .preview h2, h3{
+    margin-left: 50px;
+    padding-right: 30px;
+}
+.menu .preview p {
+    margin-left: 50px;
+    padding-right: 30px;
+}
+.menu .menu-items img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    pointer-events: none;
+}
+.selected-menu-item {
+    border: 4px solid black !important;
+}
+.menu .menu-items {
+    border: 4px solid white;
+}
+.menu .menu-items:hover {
+    border: 4px solid black;
+}
+.menu-container .navigator {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container .navigator div {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 5px;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+.menu-container .navigator div:hover {
+    background-color: black;
+}
+.selected-navigator {
+    background-color: black;
+}

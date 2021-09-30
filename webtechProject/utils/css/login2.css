@@ -1,0 +1,175 @@
+.auth-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.auth-container > div {
+    box-shadow: 22px 11px 17px -16px var(--primary-gray), -15px 17px 17px -16px var(--primary-gray) !important;
+}
+.auth-container .login {
+    width: 25%;
+}
+.auth-container .login .title {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.3rem;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.auth-container .login form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.auth-container .login form input{
+    padding: 10px;
+    flex: 1;
+    width: 90%;
+    outline: none;
+    border: 2px solid white;
+    background-color: var(--primary-gray);
+}
+.auth-container .login form input[type=submit]{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.auth-container .login form input[type=submit]:hover{
+    background-color: var(--secondary-color);
+}
+.auth-container .login form input:focus {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-gray);
+}
+.auth-container .signup {
+    flex: 1;
+}
+.auth-container .signup .title {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.3rem;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.auth-container .signup form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.auth-container .signup form div {
+    width: 100%;
+}
+.auth-container .signup form div input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: var(--primary-gray);
+    outline: none;
+    border: 2px solid white;
+}
+.auth-container .signup form div .error {
+    display: inline;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.auth-container .signup .error {
+    display: inline;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.auth-container .signup form .col2 {
+    width: 50%;
+    display: flex;
+    align-self: flex-start !important;
+}
+.auth-container .signup form .col2 .gender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-container .signup form input[type=submit] {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.auth-container .signup form input[type=submit]:hover{
+    background-color: var(--secondary-color);
+}
+/* .auth-container .signup .error {
+    display: none;
+} */
+.auth-container .apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.auth-container .apply a p {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.auth-container .apply a {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid white;
+}
+.auth-container .apply a:hover {
+    border: 1px solid black;
+}
+.auth-container .apply a .apply-button{
+    box-sizing: border-box;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.auth-container .apply img {
+    width: 50%;
+}
+.autho-container .apply a p {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

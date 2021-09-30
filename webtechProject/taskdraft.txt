@@ -1,0 +1,9 @@
+include $_SERVER['DOCUMENT_ROOT'].'/webtechProject/controllers/user.php'
+
+$user = new User($role, $name, $email, $contact_no, $location, $password, $image);
+$user->save();
+
+admin: firstname, lastname, email(signuponly), password, phoneno, NID(onlysignup), dob, gender, address, refno(onlySignup), workexp(onlysignup), image
+manager: firstname, lastname, email(signuponly), password, phoneno, NID(onlysignup), dob, gender, address, education(onlysignup), coverletter(onlinsignup), image
+rider: firstname, lastname, email(signuponly), password, phoneno, NID(onlysignup), dob, gender, address, startingtime, endingtime, vehicle,image
+customer: firstname, lastname, email(signuponly), password, dob, gender, address, favourite_foods, image

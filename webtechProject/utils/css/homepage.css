@@ -1,0 +1,201 @@
+.hero {
+    z-index: -1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100vw;
+    height: 260px;
+    background-image: url(../../image/static/hero_background.png);
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hero__info {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    opacity: 0.6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .hero__mission {
+    position: absolute;
+    left: 0px;
+    top: 260px;
+    width: 100vw;
+    background-color: var(--secondary-gray);
+    color: white;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .container {
+    width: 95vw;
+    margin: 0 auto;
+  }
+  
+  .container .featured-dish {
+    margin-top: 300px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .container .featured-dish .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .container .featured-dish .title::before {
+    content: " ";
+    display: block;
+    background-color: var(--secondary-gray);
+    height: 2px;
+    width: 50px;
+  }
+  
+  .container .featured-dish .title::after {
+    content: " ";
+    display: block;
+    background-color: var(--secondary-gray);
+    height: 2px;
+    width: 50px;
+  }
+  
+  .container .featured-dish .title h2 {
+    padding: 10px;
+  }
+  
+  /* Common Classes */
+  .dish {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.1rem;
+    gap: 20px;
+    color: black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .dish img {
+    height: 100px;
+    width: 100px;
+  }
+
+
+  @media only screen and (min-width: 1000px) {
+    header .dashboard-button-container {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+    }
+    header .dashboard-button-container a {
+      margin-right: 100px;
+    }
+    header .topnav {
+      background-color: rgba(255, 255, 255, 0.68);
+    }
+    header .topnav .hamburger {
+      display: none;
+    }
+    header .topnav nav {
+      position: initial;      
+        transform: unset;
+      height: 100%;
+      width: 50%;
+      background-color: unset;
+      -webkit-box-shadow: unset;
+              box-shadow: unset;
+    }
+    header .topnav nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin: 0px 50px 0px 50px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%;
+    }
+    .hero {
+      height: 700px;
+      margin-top: -90px;
+      position: relative;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+    .hero__info {
+      position: absolute;
+      color: black;
+      background: unset;
+      left: 100px;
+      top: 400px;
+      font-size: 2rem;
+      text-align: left;
+    }
+    .hero__mission {
+      position: absolute;
+      left: unset;
+      top: unset;
+      right: 0px;
+      bottom: -50px;
+      width: 50%;
+      height: 500px;
+      text-align: left;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+    .hero__mission h2 {
+      font-size: 3rem;
+    }
+    .hero__mission p {
+      font-size: 1.5rem;
+    }
+    .container .featured-dish {
+      margin-top: 100px;
+    }
+    .container .featured-dish .all-dishes {
+      margin: 0 auto;
+      width: 80%;
+      display: -ms-grid;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 30px;
+    }
+    .dish {
+      width: unset;
+    }
+  }
+  
